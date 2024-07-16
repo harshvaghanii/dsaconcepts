@@ -2,10 +2,10 @@ package graphs;
 
 import java.util.*;
 /*
- * This program is to practice how to represent a graph using adjacency matrix
+ * This program is to practice basics of graphs
  */
 
-public class GraphMatrix {
+public class Graphs {
 
   public static void main(String[] args) {
     int V = 4;
@@ -14,7 +14,7 @@ public class GraphMatrix {
     edges.add(Arrays.asList(0, 2));
     edges.add(Arrays.asList(1, 2));
     edges.add(Arrays.asList(2, 3));
-    GraphMatrix obj = new GraphMatrix();
+    Graphs obj = new Graphs();
     int[][] graph = obj.createGraphMatrix(edges, V);
     List<List<Integer>> graphList = obj.createGraphList(edges, V);
     obj.printGraph(graph);
